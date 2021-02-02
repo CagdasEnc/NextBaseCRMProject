@@ -21,7 +21,7 @@ public class UserStory_4 {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.get("http://login2.nextbasecrm.com/");
-        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("hr20@cybertekschool.com");
+        driver.findElement(By.xpath("//input[@name='USER_LOGIN']")).sendKeys("hr19@cybertekschool.com");
         driver.findElement(By.xpath("//input[@name='USER_PASSWORD']")).sendKeys("UserUser");
         driver.findElement(By.xpath("//input[@name='USER_REMEMBER']")).click();
         driver.findElement(By.xpath("//input[@class='login-btn']")).click();
@@ -30,31 +30,31 @@ public class UserStory_4 {
     @Test
     public void test() throws InterruptedException {
         driver.findElement(By.xpath("//span[@id='feed-add-post-form-tab-vote']")).click();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@class='bx-editor-iframe']")));
         driver.findElement(By.xpath("/html/body")).clear();
         driver.findElement(By.xpath("/html/body")).sendKeys("Hello !!");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.switchTo().parentFrame();
         driver.findElement(By.xpath("//input[@id='question_0']")).sendKeys("Hey there!");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@id='answer_0__0_']")).sendKeys("WOW");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@id='answer_0__1_']")).sendKeys("Awesome!");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@class='vote-checkbox']")).click(); // multi choice
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[@class='vote-new-question-link addq']")).click(); // add question
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@name='UF_BLOG_POST_VOTE_n0_DATA[QUESTIONS][1][QUESTION]']")).sendKeys("GALATASARAY");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@name='UF_BLOG_POST_VOTE_n0_DATA[QUESTIONS][1][ANSWERS][0][MESSAGE]']")).sendKeys("IS THE");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@name='UF_BLOG_POST_VOTE_n0_DATA[QUESTIONS][1][ANSWERS][1][MESSAGE]']")).sendKeys("BEST !!!");
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         //driver.findElement(By.xpath("//button[@id='blog-submit-button-cancel']")).click(); // cancel button
         driver.findElement(By.xpath("//button[@id='blog-submit-button-save']")).click(); // send button
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
 
     }
